@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Prasun Sanki</title>
@@ -50,13 +49,13 @@
         .container {
             background: #C0C0C0; /* Light Grey Background */
             border-radius: 20px;
-            padding: 10px; /* Reduced padding */
-            margin: 20px 10px; /* Reduced horizontal margin */
+            padding: 10px;
+            margin: 20px 10px;
             color: #000; /* Text color inside containers (Black) */
         }
 
         section {
-            padding: 0; /* No padding for sections */
+            padding: 0;
         }
 
         footer {
@@ -70,7 +69,7 @@
         .portfolio-item {
             display: flex;
             align-items: center;
-            margin-bottom: 10px; /* Reduced vertical margin */
+            margin-bottom: 10px;
         }
 
         .portfolio-item img {
@@ -83,24 +82,30 @@
         }
 
         @media (max-width: 768px) {
+            header {
+                padding: 10px; /* Reduce header padding for better mobile experience */
+            }
+
             h1 {
                 font-size: 28px; /* Adjust font size for smaller screens */
             }
 
             .header-content {
-                padding: 10px; /* Reduce padding for smaller screens */
+                padding: 10px;
             }
 
             nav a {
-                margin: 5px; /* Reduce margin for smaller screens */
+                margin: 5px;
             }
 
             .container {
-                margin: 10px; /* Adjust horizontal margin for smaller screens */
+                margin: 10px;
+                padding: 10px; /* Increase container padding for better mobile experience */
             }
 
             .portfolio-item img {
                 max-width: 80px; /* Adjust image size for smaller screens */
+                margin-right: 10px; /* Reduce image margin for better spacing on mobile */
             }
         }
     </style>
@@ -118,7 +123,8 @@
                 <a href="https://www.researchgate.net/profile/Prasun-Sanki">ResearchGate</a>
             </p>
         </div>
-    <!--
+        
+<!--
 	<nav>
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a> 
@@ -184,6 +190,6 @@
     <footer>
        <Strong>	Prasun Sanki | &copy; 2023 </Strong>
     </footer>
-</body>
 
+</body>
 </html>
