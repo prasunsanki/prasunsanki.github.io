@@ -7,7 +7,6 @@ body {
     background-color: #E6E6E6; /* Light Grey */
     margin: 0;
     padding: 0;
-    font-size: 1rem; /* Default font size */
 }
 
 header {
@@ -15,12 +14,12 @@ header {
     border-radius: 0px 0px 20px 20px;
     color: #fff;
     text-align: center;
-    padding: 1.5rem; /* More responsive padding */
+    padding: 1.5rem;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
 h1 {
-    font-size: 2.25rem; /* Scalable font size */
+    font-size: 2.25rem;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -72,10 +71,10 @@ h1 {
 .container::before {
     content: "";
     position: absolute;
-    top: -0.375rem;
-    left: -0.375rem;
-    right: -0.375rem;
-    bottom: -0.375rem;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.2);
     z-index: -1;
@@ -88,9 +87,11 @@ footer {
     color: #FFFFFF;
     text-align: center;
     padding: 0.625rem;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: bold;
     box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    box-sizing: border-box; /* Prevent overflow due to padding */
 }
 
 /* Responsive Styles */
@@ -100,12 +101,12 @@ footer {
     }
 
     header {
-        padding: 1.25rem;
+        padding: 1rem;
     }
 
     .container {
-        margin: 1.25rem;
-        padding: 1.25rem;
+        margin: 1rem;
+        padding: 1rem;
     }
 }
 
@@ -132,8 +133,10 @@ footer {
     }
 
     footer {
-        padding: 1rem;
+        padding: 0.625rem;
         font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box; /* Prevent overflow due to padding */
     }
 }
 
