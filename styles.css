@@ -103,6 +103,7 @@ header h1 {
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
+    z-index: 1; /* ✅ ensures content stays above background layers */
 }
 
 /* Glow border effect */
@@ -118,8 +119,11 @@ header h1 {
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
+
+    pointer-events: none; /* ✅ CRITICAL FIX (makes links clickable) */
 }
 
+/* Hover effect */
 .card:hover {
     transform: translateY(-8px) scale(1.01);
 }
@@ -141,6 +145,8 @@ p {
     text-decoration: none;
     color: #facc15;
     font-weight: 500;
+    position: relative;
+    z-index: 2; /* ✅ ensures it's above any layers */
 }
 
 .no-decoration:hover {
